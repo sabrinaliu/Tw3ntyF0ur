@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var num3: UILabel!
     @IBOutlet weak var p1Score: UILabel!
     @IBOutlet weak var p2Score: UILabel!
-    @IBAction func dealButton(sender: AnyObject) {
+    @IBAction func dealButton(_ sender: AnyObject) {
         if (lastUsr == 1){
             p1Score.text = String(Int(p1Score.text!)! + 1)
         }else if (lastUsr == 2){
@@ -32,14 +32,14 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func p1AnsButton(sender: AnyObject) {
+    @IBAction func p1AnsButton(_ sender: AnyObject) {
         if (lastUsr == 1){
             lastUsr = 0
         }else{
             lastUsr = 1
         }
     }
-    @IBAction func p2AnsButton(sender: AnyObject) {
+    @IBAction func p2AnsButton(_ sender: AnyObject) {
         if (lastUsr == 2){
             lastUsr = 0
         }else{
