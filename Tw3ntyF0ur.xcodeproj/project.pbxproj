@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		898C00241F6DEC5600827A15 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C00231F6DEC5600827A15 /* Card.swift */; };
 		D6D61C9D1F6DD317008D54ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D61C9C1F6DD317008D54ED /* AppDelegate.swift */; };
 		D6D61C9F1F6DD317008D54ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D61C9E1F6DD317008D54ED /* ViewController.swift */; };
 		D6D61CA21F6DD317008D54ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D61CA01F6DD317008D54ED /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		898C00231F6DEC5600827A15 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		D6D61C991F6DD317008D54ED /* Tw3ntyF0ur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tw3ntyF0ur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D61C9C1F6DD317008D54ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6D61C9E1F6DD317008D54ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				D6D61CA31F6DD317008D54ED /* Assets.xcassets */,
 				D6D61CA51F6DD317008D54ED /* LaunchScreen.storyboard */,
 				D6D61CA81F6DD317008D54ED /* Info.plist */,
+				898C00231F6DEC5600827A15 /* Card.swift */,
 			);
 			path = Tw3ntyF0ur;
 			sourceTree = "<group>";
@@ -96,6 +99,8 @@
 				TargetAttributes = {
 					D6D61C981F6DD317008D54ED = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D2ZMJ8S8D5;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -136,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D61C9F1F6DD317008D54ED /* ViewController.swift in Sources */,
+				898C00241F6DEC5600827A15 /* Card.swift in Sources */,
 				D6D61C9D1F6DD317008D54ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +255,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2ZMJ8S8D5;
 				INFOPLIST_FILE = Tw3ntyF0ur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabrinaliu.Tw3ntyF0ur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,10 +268,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2ZMJ8S8D5;
 				INFOPLIST_FILE = Tw3ntyF0ur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabrinaliu.Tw3ntyF0ur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +296,7 @@
 				D6D61CAD1F6DD317008D54ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,53 +19,64 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chp-9Y-2yx">
-                                <rect key="frame" x="99" y="268" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-wo-xHD">
-                                <rect key="frame" x="99" y="404" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PU-cN-db3">
-                                <rect key="frame" x="266" y="404" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMa-2D-pah">
-                                <rect key="frame" x="170" y="353" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMa-2D-pah">
+                                <rect key="frame" x="150" y="318.5" width="75" height="30"/>
                                 <state key="normal" title="Deal Cards"/>
                                 <connections>
                                     <action selector="dealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otJ-zj-P2t"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d32-FE-9De">
-                                <rect key="frame" x="266" y="268" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_back" translatesAutoresizingMaskIntoConstraints="NO" id="6x9-AV-B5q">
+                                <rect key="frame" x="28" y="77" width="131.5" height="180"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_back" translatesAutoresizingMaskIntoConstraints="NO" id="m3q-5b-UwH">
+                                <rect key="frame" x="215.5" y="77" width="131.5" height="180"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_back" translatesAutoresizingMaskIntoConstraints="NO" id="CHU-PO-Acp">
+                                <rect key="frame" x="215.5" y="410" width="131.5" height="180.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_back" translatesAutoresizingMaskIntoConstraints="NO" id="VFq-nA-yM1">
+                                <rect key="frame" x="28" y="410" width="131.5" height="180.5"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m3q-5b-UwH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="32e-2z-kFD"/>
+                            <constraint firstItem="VFq-nA-yM1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.75" id="6js-UZ-Hbf"/>
+                            <constraint firstItem="CHU-PO-Acp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="9fg-6I-czP"/>
+                            <constraint firstItem="6x9-AV-B5q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.25" id="C5y-BQ-aOS"/>
+                            <constraint firstItem="aMa-2D-pah" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F4m-wj-9Mq"/>
+                            <constraint firstItem="6x9-AV-B5q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.27" id="FXS-bx-luD"/>
+                            <constraint firstItem="VFq-nA-yM1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.27" id="GSa-Ma-8Ec"/>
+                            <constraint firstItem="6x9-AV-B5q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.25" id="GfS-g3-2q0"/>
+                            <constraint firstItem="6x9-AV-B5q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="JdO-s4-UyD"/>
+                            <constraint firstItem="aMa-2D-pah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M4L-OO-cyk"/>
+                            <constraint firstItem="m3q-5b-UwH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.75" id="Wiw-aW-19n"/>
+                            <constraint firstItem="CHU-PO-Acp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.27" id="XJW-iA-hEN"/>
+                            <constraint firstItem="m3q-5b-UwH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.27" id="dja-5p-IvX"/>
+                            <constraint firstItem="CHU-PO-Acp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.75" id="eFx-2X-S8r"/>
+                            <constraint firstItem="m3q-5b-UwH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.25" id="kpG-wI-bYB"/>
+                            <constraint firstItem="VFq-nA-yM1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="lal-3b-Vtb"/>
+                            <constraint firstItem="VFq-nA-yM1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="0.25" id="uxH-V1-xxR"/>
+                            <constraint firstItem="CHU-PO-Acp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.75" id="zwe-dI-D33"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="num0" destination="chp-9Y-2yx" id="hqI-cz-4hj"/>
-                        <outlet property="num1" destination="d32-FE-9De" id="LGA-7e-9Eu"/>
-                        <outlet property="num2" destination="3PU-cN-db3" id="uNP-rX-UD4"/>
-                        <outlet property="num3" destination="g4R-wo-xHD" id="0HZ-MC-TGK"/>
+                        <outlet property="cardImageView1" destination="6x9-AV-B5q" id="cdq-kG-qN3"/>
+                        <outlet property="cardImageView2" destination="m3q-5b-UwH" id="qjW-Zx-6DR"/>
+                        <outlet property="cardImageView3" destination="VFq-nA-yM1" id="dUd-Ze-iJe"/>
+                        <outlet property="cardImageView4" destination="CHU-PO-Acp" id="tel-Km-hWp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Card_back" width="755" height="1057"/>
+    </resources>
 </document>
